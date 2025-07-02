@@ -229,7 +229,7 @@
                     <img src="https://placehold.co/700x450/ffe9b0/333333?text=Project+1+Image" alt="Project 1" class="w-full h-auto object-cover">
                 </div>
                 <div class="project-content w-full md:w-1/2 p-6 text-left">
-                    <h3 class="text-4xl font-playfair-display font-semibold mb-4">[Project Title 1]</h3>
+                    <h3 class="text-4xl font-playfair-display font-semibold mb-4">[Keysight Redesign]</h3>
                     <p class="text-gray-700 text-lg leading-relaxed mb-6">
                         This project involved [brief overview, e.g., developing a responsive web application for online learning].
                         I focused on [your role, e.g., implementing the frontend using React and optimizing for performance].
