@@ -1,68 +1,63 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kimia Mostadam | UX Researcher @ Meta</title>
+    <title>Kimia Mostadam | Seasoned UX Researcher</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        :root {
-            --accent-purple: #9D50BB;
-            --glass-bg: rgba(255, 255, 255, 0.4);
-            --glass-border: rgba(157, 80, 187, 0.2);
-            --bg-warm: #FFF8F0;
-        }
+        :root { --accent: #9D50BB; --bg: #FFF8F0; }
+        body { font-family: 'Inter', sans-serif; background-color: var(--bg); }
+        .bento-grid { display: grid; grid-template-columns: repeat(12, 1fr); gap: 1.5rem; max-width: 1200px; margin: 0 auto; padding: 2rem; }
+        .bento-box { background: rgba(255,255,255,0.5); backdrop-filter: blur(10px); border: 1px solid rgba(157,80,187,0.1); border-radius: 24px; padding: 2rem; transition: 0.4s; }
+        .bento-box:hover { transform: translateY(-5px); border-color: var(--accent); }
+        .tag { color: var(--accent); font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; }
+    </style>
+</head>
+<body>
 
-        body { font-family: 'Inter', sans-serif; background-color: var(--bg-warm); color: #333; }
-        h1, h2, h3, h4 { font-family: 'Playfair Display', serif; color: #1a1a1a; }
+    <section class="max-w-4xl mx-auto py-20 px-6">
+        <h1 class="text-6xl font-serif mb-6">Kimia Mostadam</h1>
+        <p class="text-xl text-gray-600 leading-relaxed">
+            Seasoned **UX Researcher** specializing in mixed-methods for complex hardware and software. 
+            Currently at **Meta Reality Labs**, previously at **Apple**. 
+            <br><br>
+            <span class="text-black font-medium italic">"I am a bridge-builder, a listener, and a relentless advocate for the user's end-goal."</span>
+        </p>
+        <div class="mt-8">
+            <a href="Google_UXR_Resume_2026.pdf" target="_blank" class="bg-black text-white px-8 py-3 rounded-full font-medium hover:bg-gray-800 transition">View Resume</a>
+        </div>
+    </section>
 
-        .bento-grid {
-            display: grid;
-            grid-template-columns: repeat(12, 1fr);
-            gap: 1.5rem;
-        }
+    <div class="bento-grid">
+        <div class="bento-box col-span-12 md:col-span-8">
+            <span class="tag">Confidential • Meta Reality Labs</span>
+            <h3 class="text-2xl font-serif mt-2 mb-4">Perceptual Evaluation for AR/VR Hardware</h3>
+            <p class="text-gray-600">Led 10+ end-to-end mixed-methods studies $(n=40-60)$ to quantify user comfort and technical thresholds. Resulted in a 10% lift in satisfaction metrics.</p>
+        </div>
 
-        .bento-box {
-            background: var(--glass-bg);
-            backdrop-filter: blur(10px);
-            border: 1px solid var(--glass-border);
-            border-radius: 24px;
-            padding: 2rem;
-            transition: all 0.4s ease;
-            text-decoration: none;
-            color: inherit;
-            overflow: hidden;
-            display: flex;
-            flex-direction: column;
-        }
+        <div class="bento-box col-span-12 md:col-span-4 bg-purple-50 border-purple-200">
+            <span class="tag">Quick Stats</span>
+            <ul class="mt-4 space-y-2 text-sm font-medium">
+                <li>• M.S. Human-Computer Interaction</li>
+                <li>• Expert in R, Python, & Qualtrics</li>
+                <li>• 400+ Participant Study Management</li>
+            </ul>
+        </div>
 
-        .bento-box:hover {
-            transform: translateY(-8px);
-            border-color: var(--accent-purple);
-            box-shadow: 0 15px 30px rgba(157, 80, 187, 0.15);
-        }
+        <div class="bento-box col-span-12 md:col-span-6">
+            <span class="tag">Confidential • Apple Human Engineering</span>
+            <h3 class="text-xl font-serif mt-2 mb-2">Quantitative Strategy for Health Tech</h3>
+            <p class="text-gray-600 text-sm">Synthesized trends from 400-participant datasets to inform strategic product pivots and privacy-centric research protocols.</p>
+        </div>
 
-        .cs-large { grid-column: span 7; }
-        .cs-medium { grid-column: span 5; }
-        .cs-small { grid-column: span 6; }
+        <div class="bento-box col-span-12 md:col-span-6">
+            <span class="tag">Case Study • Keysight</span>
+            <h3 class="text-xl font-serif mt-2 mb-2">PWMA: B2B Data Visualization</h3>
+            <p class="text-gray-600 text-sm">Conducted 30+ interviews and A/B testing to improve technical navigation clarity by 20%.</p>
+        </div>
+    </div>
 
-        @media (max-width: 1024px) {
-            .cs-large, .cs-medium, .cs-small { grid-column: span 12; }
-        }
-
-        .tag {
-            background: rgba(157, 80, 187, 0.1);
-            color: var(--accent-purple);
-            padding: 0.3rem 0.8rem;
-            border-radius: 20px;
-            font-size: 0.75rem;
-            font-weight: bold;
-            margin-bottom: 1rem;
-            display: inline-block;
-        }
-
-        .btn-minimal {
-            display: inline-block;
-            padding: 0.75rem 2rem;
-            border:
+</body>
+</html>
